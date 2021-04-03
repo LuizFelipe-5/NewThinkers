@@ -39,14 +39,14 @@ public class Cozinha {
     this.tipo = tipo;
   }
 
-  public int getnumeroCozinheiros() {
-    return numeroCozinheiros;
-  }
-
   public void setNumeroCozinheiros(int numeroCozinheiros) {
     this.numeroCozinheiros = numeroCozinheiros; 
   }
   
+  public int getNumeroCozinheiros() {
+      return numeroCozinheiros;
+  }
+
   public int getTempoPreparo() {
     return tempoPreparo;
   }
@@ -77,6 +77,22 @@ public class Cozinha {
 
   public void setPratoPrincipal(String pratoPrincipal) {
     this.pratoPrincipal = pratoPrincipal;
+  }
+
+  public List<Funcionario> getFuncionarios() {
+      return funcionarios;
+  }
+
+  public void setFuncionarios(List<Funcionario> funcionarios) {
+      this.funcionarios = funcionarios;
+  }
+
+  public List<Ingrediente> getIngredientes() {
+      return ingredientes;
+  }
+
+  public void setIngredientes(List<Ingrediente> ingredientes) {
+      this.ingredientes = ingredientes;
   }
 
   void prepararPratos() {

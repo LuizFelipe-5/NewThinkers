@@ -22,7 +22,6 @@ public class Main {
 
     Cozinha cozMin = new Cozinha(2, "Mineira", 2, 30, 14, 20, "Feijoada", ingMin, funcsMin);  
 
-    
     Ingrediente champignon = new Ingrediente("Champignon", LocalDate.of(2021,04,30));
     Ingrediente brocolis = new Ingrediente("Brócolis", LocalDate.of(2021,04,25));
     Ingrediente macarrao = new Ingrediente("Macarrão", LocalDate.of(2021,10,20));
@@ -48,6 +47,5 @@ public class Main {
     List<Ingrediente> ingIt = Arrays.asList(molho, macarrao, carne);
 
     Cozinha cozIt = new Cozinha(10, "Italiana", 3, 50, 13, 23, "Pizza", ingIt, funcsIt);
-
   }
 }
