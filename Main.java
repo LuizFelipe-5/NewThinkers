@@ -1,20 +1,41 @@
-class Main {
+import java.util.*;
+import java.time.LocalDate;
+
+public class Main {
   public static void main(String[] args) {
     System.out.println("Iniciando o trabalho");
 
-    Cozinha cozMin = new Cozinha();
-    cozMin.tipo = "Mineira";
-    // cozMin.numeroPratos = 10;
-    cozMin.tempoPreparo = 30;
-    cozMin.numeroCozinheiros = 5;
-    cozMin.getNumeroPratos();
-    cozMin.setNumeroPratos(10);
+    Cozinha cozMin = new Cozinha(2, "Mineira", 2, 30, 14, 20, "Feijoada");  
+
+    Ingrediente feijao = new Ingrediente("Feijão", LocalDate.of(2021, 12, 22));
+    Ingrediente farinha = new Ingrediente("Farinha", LocalDate.of(2021,04,30));
+    Ingrediente arroz = new Ingrediente("Arroz", LocalDate.of(2022,01,27));
+    Ingrediente carnePorco = new Ingrediente("Carne de porco", LocalDate.of(2021,04,29));
+    Ingrediente linguica = new Ingrediente("Linguiça", LocalDate.of(2021,06,20));
+
+    Funcionario funcMin1 = new Funcionario("Carlos", "Cozinheiro");
+    Funcionario funcMin2 = new Funcionario("Sophia", "Cozinheira");
+    Funcionario funcMin3 = new Funcionario("Beatriz", "Garçonete");
+    Funcionario funcMin4 = new Funcionario("Lucas", "Serviços Gerais");
     
-    Cozinha cozIt = new Cozinha();
-    cozIt.tipo = "Italiana";
-    cozIt.numeroPratos = 10;
-    cozIt.numeroCozinheiros = 8;
-    cozIt.tempoPreparo = 50;
+    Cozinha cozChi = new Cozinha(5, "Chinesa", 10, 21, 10, 21, "Yakissoba");
+    
+    Ingrediente champignon = new Ingrediente("Champignon", LocalDate.of(2021,04,30));
+    Ingrediente brocolis = new Ingrediente("Brócolis", LocalDate.of(2021,04,25));
+    Ingrediente macarrao = new Ingrediente("Macarrão", LocalDate.of(2021,10,20));
+    Ingrediente carne = new Ingrediente("Carne", LocalDate.of(2021, 04, 20));
+
+    Funcionario funcChi1 = new Funcionario("Ho", "Cozinheiro");
+    Funcionario funcChi2 = new Funcionario("Chi", "Serviços Gerais");
+    Funcionario funcChi3 = new Funcionario("Lee", "Garçom");
+
+    Cozinha cozIt = new Cozinha(10, "Italiana", 3, 50, 13, 23, "Pizza");
+
+    Ingrediente molho = new Ingrediente("Molho", LocalDate.of(2021, 05, 20));
+
+    Funcionario funcIt1 = new Funcionario("Mario", "Cozinheiro");
+    Funcionario funcIt2 = new Funcionario("Luigi", "Garçom");
+
 
 
   }
