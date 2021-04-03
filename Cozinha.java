@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class Cozinha {
   private int numeroPratos;
@@ -8,10 +8,10 @@ public class Cozinha {
   private int horaAbertura;
   private int horaFechamento;
   private String pratoPrincipal;
-  private ArrayList<Ingrediente> ingredientes;
-  private ArrayList<Funcionario> funcionarios;
-  
-  public Cozinha(int numeroPratos, String tipo, int numeroCozinheiros, int tempoPreparo, int horaAbertura, int horaFechamento, String pratoPrincipal) {
+  private List<Ingrediente> ingredientes;
+  private List<Funcionario> funcionarios;
+
+  public Cozinha(int numeroPratos, String tipo, int numeroCozinheiros, int tempoPreparo, int horaAbertura, int horaFechamento, String pratoPrincipal,List<Ingrediente> ingredientes, List<Funcionario> funcionarios) {
     this.numeroPratos = numeroPratos;
     this.tipo = tipo;
     this.numeroCozinheiros = numeroCozinheiros;
@@ -19,8 +19,8 @@ public class Cozinha {
     this.horaAbertura = horaAbertura;
     this.horaFechamento = horaFechamento;
     this.pratoPrincipal = pratoPrincipal;
-    ingredientes = new ArrayList<Ingrediente>();
-    funcionarios = new ArrayList<Funcionario>();
+    this.ingredientes = ingredientes;
+    this.funcionarios = funcionarios;
   }
 
   public int getNumeroPratos() {
@@ -77,14 +77,6 @@ public class Cozinha {
 
   public void setPratoPrincipal(String pratoPrincipal) {
     this.pratoPrincipal = pratoPrincipal;
-  }
-
-  public void inserirIngrediente(Ingrediente ingrediente) {
-    ingredientes.add(ingrediente);
-  }
-
-  public void inserirFuncionario(Funcionario funcionario) {
-    funcionarios.add(funcionario);
   }
 
   void prepararPratos() {
